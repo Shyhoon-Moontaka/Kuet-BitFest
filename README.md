@@ -24,3 +24,29 @@ Challenge 1
 7. Starting the Express server and listening on the specified port.
 
 This code sets up a basic chatbot server that can generate responses based on user prompts using the Google Generative AI model.
+
+
+
+
+Challenge 2
+
+In this challenge, Node.js will serve as the backend platform for developing a robust API system to support Mofa’s Kitchen Buddy. The Node.js environment will handle various aspects of the system, including managing ingredients, storing recipes, and integrating a chatbot powered by a Large Language Model (LLM).
+
+Key Components:
+Database Design:
+
+Utilize a Node.js backend to interact with a relational database (e.g., PostgreSQL or MongoDB) for storing ingredient data.
+Schema will include tables for ingredients with fields such as ingredient_id, name, quantity, and unit.
+Ingredient Management API:
+
+Develop RESTful APIs in Node.js to:
+Add new ingredients.
+Update ingredient quantities after shopping or cooking.
+Recipe Retrieval:
+
+Create APIs to handle parsing and storing recipe details from images or text into a centralized file (my_fav_recipes.txt).
+Gemini API will be responsible for extracting text from images or external recipe data and storing them in the database.
+Chatbot Integration:
+
+A Node.js-based server will host the LLM-based chatbot API.
+Chatbot interactions will process a combined recipe text file to suggest recipes using available ingredients. The Gemini API will assist in processing user queries for ingredient recognition and recipe suggestions.
